@@ -1,1 +1,20 @@
-node_modules
+# Dependencias
+node_modules/
+
+# Archivos generados
+dist/
+build/
+
+# Variables privadas
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Registros
+*.log
+
