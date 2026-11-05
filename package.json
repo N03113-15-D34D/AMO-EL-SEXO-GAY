@@ -1,23 +1,32 @@
-{
-  "name": "velvet-bl",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.8",
-    "react": "^18.3.1",
-    "react-bootstrap": "^2.10.10",
-    "react-bootstrap-icons": "^1.11.6",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^7.18.5"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.4",
-    "vite": "^6.0.5"
-  }
-}
+
+# Dependencias
+node_modules/
+
+# Archivos de compilación
+dist/
+build/
+
+# Variables de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configuración de editores
+.vscode/
+.idea/
+
+# Registros
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Archivos temporales
+*.log
+.cache/

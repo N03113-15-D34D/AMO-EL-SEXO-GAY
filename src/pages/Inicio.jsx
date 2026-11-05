@@ -8,23 +8,41 @@ import { historiasService } from '../services/historiasService';
 import { filtrarHistorias } from '../utils/busqueda';
 import { useFavoritos } from '../context/FavoritosContext';
 
-export default function Inicio() {
+function Inicio() {
   const [busqueda, setBusqueda] = useState('');
   const [generoSeleccionado, setGeneroSeleccionado] = useState('Todos');
-  const [historias] = useState(() => historiasService.obtenerTodas());
+
+  const [historias] = useState(() =>
+    historiasService.obtenerTodas()
+  );
+
   const { favoritos, toggleFavorito } = useFavoritos();
 
   const historiasFiltradas = useMemo(() => {
-    return filtrarHistorias(historias, busqueda, generoSeleccionado);
+    return filtrarHistorias(
+      historias,
+      busqueda,
+      generoSeleccionado
+    );
   }, [historias, busqueda, generoSeleccionado]);
 
   return (
     <LayoutPrincipal>
       <div className="w-100 text-center">
-        <Hero busqueda={busqueda} setBusqueda={setBusqueda} />
-        
+
+        <Hero
+          busqueda={busqueda}
+          setBusqueda={setBusqueda}
+        />
+
         <div className="my-4">
-          <h2 className="fw-bold text-dark mb-3">Explora por Género 🌸</h2>
+          <h2
+            className="fw-bold mb-3"
+            style={{ color: '#38213F' }}
+          >
+            Explora por Género 🌸
+          </h2>
+
           <FiltroGenero
             generoSeleccionado={generoSeleccionado}
             setGeneroSeleccionado={setGeneroSeleccionado}
@@ -32,7 +50,13 @@ export default function Inicio() {
         </div>
 
         <section className="my-4 w-100">
-          <h3 className="text-start fw-bold mb-4 px-2">📖 Catálogo Completo</h3>
+          <h3
+            className="text-start fw-bold mb-4 px-2"
+            style={{ color: '#38213F' }}
+          >
+            📖 Catálogo Completo
+          </h3>
+
           <GaleriaHistorias
             historias={historiasFiltradas}
             favoritos={favoritos}
@@ -41,7 +65,10 @@ export default function Inicio() {
         </section>
 
         <Newsletter />
+
       </div>
     </LayoutPrincipal>
   );
 }
+
+export default Inicio;

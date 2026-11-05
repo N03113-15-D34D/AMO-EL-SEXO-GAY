@@ -8,28 +8,48 @@ export function Newsletter() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email) {
+
+    if (email.trim()) {
       setEnviado(true);
       setEmail('');
     }
   };
 
   return (
-    <div className="bg-white rounded-4 shadow-sm p-4 p-md-5 my-5 text-center border w-100">
-      <h3 className="fw-bold text-dark mb-2">
+    <div
+      className="rounded-4 shadow-sm p-4 p-md-5 my-5 text-center w-100"
+      style={{ backgroundColor: '#F5DDE7' }}
+    >
+      <h3
+        className="fw-bold mb-2"
+        style={{ color: '#38213F' }}
+      >
         ¡No te pierdas ningún estreno! 💌
       </h3>
+
       <p className="text-muted mb-4">
         Suscríbete para recibir recomendaciones semanales y nuevos capítulos.
       </p>
 
       {enviado ? (
-        <div className="alert alert-success d-inline-block rounded-pill px-4">
+        <div
+          className="d-inline-block rounded-pill px-4 py-2"
+          style={{
+            backgroundColor: '#38213F',
+            color: '#FFFFFF'
+          }}
+        >
           ¡Gracias por suscribirte! 🌸
         </div>
       ) : (
-        <Form onSubmit={handleSubmit} className="d-flex justify-content-center">
-          <InputGroup style={{ maxWidth: '450px' }} className="shadow-sm rounded-pill overflow-hidden">
+        <Form
+          onSubmit={handleSubmit}
+          className="d-flex justify-content-center"
+        >
+          <InputGroup
+            style={{ maxWidth: '450px' }}
+            className="shadow-sm rounded-pill overflow-hidden"
+          >
             <Form.Control
               type="email"
               placeholder="Tu correo electrónico..."
@@ -38,7 +58,8 @@ export function Newsletter() {
               required
               className="border-0 shadow-none ps-3"
             />
-            <Boton type="submit" variant="primary">
+
+            <Boton type="submit" variant="rosa">
               Suscribir
             </Boton>
           </InputGroup>

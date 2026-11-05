@@ -4,25 +4,45 @@ import GaleriaHistorias from '../components/organisms/GaleriaHistorias';
 import { historiasService } from '../services/historiasService';
 import { useFavoritos } from '../context/FavoritosContext';
 
-export default function Favoritos() {
-  const [todas] = useState(() => historiasService.obtenerTodas());
+function Favoritos() {
+  const [todas] = useState(() =>
+    historiasService.obtenerTodas()
+  );
+
   const { favoritos, toggleFavorito } = useFavoritos();
 
-  const historiasFavoritas = todas.filter((item) => favoritos.includes(item.id));
+  const historiasFavoritas = todas.filter((item) =>
+    favoritos.includes(item.id)
+  );
 
   return (
     <LayoutPrincipal>
       <div className="w-100 text-center">
-        <div className="bg-white rounded-4 shadow-sm p-4 mb-4 border">
-          <h1 className="fw-bold text-dark display-6 mb-2">❤️ Mis Favoritos</h1>
+
+        {/* Encabezado */}
+        <div
+          className="rounded-4 shadow-sm p-4 p-md-5 mb-4"
+          style={{ backgroundColor: '#F5DDE7' }}
+        >
+          <h1
+            className="fw-bold display-6 mb-2"
+            style={{ color: '#38213F' }}
+          >
+            ❤️ Mis Favoritos
+          </h1>
+
           <p className="text-muted mb-0">
             Tu lista personal de manhwas y novelas guardadas.
           </p>
         </div>
 
+        {/* Historias favoritas */}
         {historiasFavoritas.length === 0 ? (
-          <div className="p-5 bg-white rounded-4 shadow-sm border my-4">
-            <p className="fs-5 text-muted mb-0">
+          <div
+            className="p-5 rounded-4 shadow-sm my-4"
+            style={{ backgroundColor: '#F5DDE7' }}
+          >
+            <p className="fs-5 mb-0" style={{ color: '#75435F' }}>
               Aún no has agregado ninguna historia a favoritos 💔
             </p>
           </div>
@@ -33,7 +53,10 @@ export default function Favoritos() {
             onToggleFavorito={toggleFavorito}
           />
         )}
+
       </div>
     </LayoutPrincipal>
   );
 }
+
+export default Favoritos;

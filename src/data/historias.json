@@ -4,16 +4,16 @@
     "titulo": "Unromantic",
     "autor": "Jeong Suk / Manggag",
     "genero": "Omegaverse / Drama",
-    "portada": "https://i.pinimg.com/564x/0a/22/3a/0a223a2a61dd0812b9d21eb8aaeb00eb.jpg",
+    "portada": "/Imagen1.jpg",
     "descripcion": "Un omega frío y dominante choca con un alfa inesperado en un drama lleno de tensión y romance.",
     "popular": true
   },
   {
     "id": "2",
-    "titulo": "La Noche que Florece el Cielo",
+    "titulo": "Pintor Nocturno",
     "autor": "Byeonduck",
     "genero": "Manhwa BL / Histórico",
-    "portada": "https://i.pinimg.com/564x/87/40/2a/87402a5c48b0ad6c0e818bc7e34ef19a.jpg",
+    "portada": "/Imagen2.jpg",
     "descripcion": "Un joven pintor de arte erótico es contratado por un noble de alta cuna con oscuros deseos.",
     "popular": true
   },
@@ -22,7 +22,7 @@
     "titulo": "Cherry Blossoms After Winter",
     "autor": "Bamwoo",
     "genero": "Romance / Escolar",
-    "portada": "https://i.pinimg.com/564x/2d/a7/62/2da7623aef54256ebbe8ec95719bc422.jpg",
+    "portada": "/Imagen3.jpg",
     "descripcion": "Dos chicos que crecieron como hermanos bajo el mismo techo comienzan a desarrollar sentimientos románticos.",
     "popular": true
   },
@@ -31,7 +31,7 @@
     "titulo": "Given",
     "autor": "Natsuki Kizu",
     "genero": "Shonen-ai / Música",
-    "portada": "https://i.pinimg.com/564x/5a/07/04/5a07049e6f3b01859bb8a4d46c827364.jpg",
+    "portada": "/Imagen4.jpg",
     "descripcion": "Un guitarrista apático conoce a un chico con una guitarra rota y una voz impactante que sanará viejas heridas.",
     "popular": true
   },
@@ -40,7 +40,7 @@
     "titulo": "Love Jinx",
     "autor": "Geonhan",
     "genero": "Manhwa BL",
-    "portada": "https://i.pinimg.com/564x/80/7e/34/807e3427be515c10fa1eb2a061ef2f05.jpg",
+    "portada": "/Imagen5.jpg",
     "descripcion": "Haejin tiene una extraña maldición: cada vez que besa a alguien con quien sale, todo sale mal.",
     "popular": false
   },
@@ -49,26 +49,46 @@
     "titulo": "BJ Alex",
     "autor": "Mingwa",
     "genero": "Manhwa BL / Universitario",
-    "portada": "https://i.pinimg.com/564x/8b/76/f5/8b76f578df8831efbb4a9d701efd019f.jpg",
+    "portada": "/Imagen6.jpg",
     "descripcion": "DONG-GYUN es un fan acérrimo de un popular camcaster en línea, sin saber que se trata del presidente de su consejo estudiantil.",
     "popular": true
   },
   {
-    "id": "7",
-    "titulo": "Un Enamoramiento Imposible",
-    "autor": "Guwol",
-    "genero": "Shonen-ai / Comedia",
-    "portada": "https://i.pinimg.com/564x/4b/32/2d/4b322d718b532938cf788bdcd4775d7e.jpg",
-    "descripcion": "Un estudiante intenta ocultar desesperadamente sus sentimientos mientras lidia con confusos malentendidos.",
-    "popular": false
-  },
+  "id": "7",
+  "titulo": "Semantic Error",
+  "autor": "Angy / J.Soori",
+  "genero": "Shonen-ai / Comedia",
+  "portada": "/Imagen7.jpg",
+  "descripcion": "Un estudiante perfeccionista de informática debe lidiar con el chico más popular del campus, rompiendo toda su rutina.",
+  "popular": true
+},
   {
     "id": "8",
     "titulo": "Bajo la Luz Verde",
     "autor": "JAXX",
     "genero": "Manhwa BL / Drama",
-    "portada": "https://i.pinimg.com/564x/de/3f/14/de3f140fb0dbd44bf25e2e850cf58237.jpg",
+    "portada": "/Imagen8.jpg",
     "descripcion": "Un estudiante de escultura obsesionado con un peligroso miembro de la mafia que accede a ser su modelo.",
+    "popular": true
+  }
+  ,
+{
+    "id": "9",
+    "titulo": "Ennead",
+    "autor": "Guwol",
+    "genero": "Manhwa BL / Drama",
+    "portada": "/Imagen9.jpg",
+    "descripcion": "Una historia épica de venganza, ambición y obsesión ambientada entre los dioses del antiguo Egipto.",
+    "popular": true
+  },
+
+  {
+  "id": "10",
+    "titulo": "Sasaki to Miyano",
+    "autor": "Shou Harusono",
+    "genero": "Shonen-ai / Escolar",
+    "portada": "/Imagen10.jpg",
+    "descripcion": "Un estudiante aficionado a los mangas BL llama la atención de un chico mayor rebelde que quiere saber más sobre sus gustos.",
     "popular": true
   }
 ]

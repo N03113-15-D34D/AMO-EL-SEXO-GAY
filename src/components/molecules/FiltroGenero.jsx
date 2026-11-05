@@ -10,7 +10,7 @@ export function FiltroGenero({
       {generos.map((genero) => (
         <Boton
           key={genero}
-          variant={generoSeleccionado === genero ? 'primary' : 'outline-secondary'}
+          variant={generoSeleccionado === genero ? 'danger' : 'outline-danger'}
           size="sm"
           onClick={() => setGeneroSeleccionado(genero)}
         >
